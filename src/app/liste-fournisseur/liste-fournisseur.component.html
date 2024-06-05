@@ -1,0 +1,27 @@
+<p>liste-article works!</p>
+<h2 align="center">Liste des Fournisseurs</h2>
+<br/>
+<table align="center" border="1" class="table">
+  <thead>
+    <tr>
+      <td>id</td>
+      <th>name</th>
+      <th>adress</th>
+
+      <th>Supprimer</th>
+      <th>Modifie</th>
+        </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let fournisseur of fournisseurs">
+
+      <td>{{fournisseur.id}}</td>
+      <td>{{fournisseur.name}}</td>
+      <td>{{fournisseur.adress}}</td>
+
+      <td><button class="btn btn-danger" (click)="deleteFournisseur(fournisseur)">Supprimer</button></td>
+      <td><button class="btn btn-warning" (click)="updatefournisseur1(fournisseur)">Modifier</button></td>
+  </tr>
+  </tbody>
+</table>
+

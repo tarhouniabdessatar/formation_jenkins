@@ -1,0 +1,28 @@
+<p>liste-article works!</p>
+<h2 align="center">Liste des Articless</h2>
+<br/>
+<table align="center" border="1" class="table">
+  <thead>
+    <tr>
+      <td>code</td>
+      <th>designation</th>
+      <th>marque</th>
+      <th>prix</th>
+      <th>quantite</th>
+      <th>Supprimer</th>
+      <th>Modifie</th>
+        </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articles">
+
+      <td>{{article.id}}</td>
+      <td>{{article.designation}}</td>
+      <td>{{article.marque}}</td>
+      <td>{{article.prix}}</td>
+      <td>{{article.quantite}}</td>
+      <td><button class="btn btn-danger" (click)="deleteArticle(article)">Supprimer</button></td>
+      <td><button class="btn btn-warning" (click)="updatearticle(article)">Modifier</button></td>
+  </tr>
+  </tbody>
+</table>

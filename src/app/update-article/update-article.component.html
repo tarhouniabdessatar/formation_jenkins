@@ -1,0 +1,22 @@
+<p>update-article works!</p>
+<h2 align="center">Update article</h2>
+
+
+  <div class="form-group">
+    <label for="designation">designation</label>
+    <input [(ngModel)]="designation" required  type="text" class="form-control" id="designation" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="marque">marque</label>
+    <input [(ngModel)]="marque" type="text" class="form-control" id="marque" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="prix">prix</label>
+    <input [(ngModel)]="prix" type=number class="form-control" id="prix" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="quantite">prix</label>
+    <input [(ngModel)]="quantite" type=number class="form-control" id="quantite" aria-describedby="emailHelp">
+  </div>
+
+  <button  class="btn btn-primary" (click)="saveUpdatedArticle()">Modifier</button>

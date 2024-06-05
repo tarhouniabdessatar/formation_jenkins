@@ -1,0 +1,25 @@
+<p>ajout-article works!</p>
+<h2 align="center">Ajout 3232des articles</h2>
+
+<form #articleForm="ngForm" (ngSubmit)="addArticle(articleForm.value)">
+
+  <div class="form-group">
+    <label for="designation">designation</label>
+    <input ngModel required name="designation" type="text" class="form-control" id="designation"  placeholder="designation">
+  </div>
+  <div class="form-group">
+    <label for="marque">marque</label>
+    <input ngModel required name="marque" type="text" class="form-control" id="marque"  placeholder="prix">
+  </div>
+  <div class="form-group">
+    <label for="prix">prix</label>
+    <input ngModel required name="prix" type=number class="form-control" id="prix"  placeholder="prix">
+  </div>
+  <div class="form-group">
+    <label for="quantite">quantite</label>
+    <input ngModel required name="quantite" type=number class="form-control" id="quantite"  placeholder="quantite">
+  </div>
+
+  <button type="submit" >Submit</button>
+</form>
+

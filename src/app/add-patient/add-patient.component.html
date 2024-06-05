@@ -1,0 +1,26 @@
+<p>ajout-article works!</p>
+<h2 align="center">Ajout Patient</h2>
+
+<form #patientForm="ngForm" (ngSubmit)="addpatient(patientForm.value)">
+
+  <div class="form-group">
+    <label for="nom">Nom</label>
+    <input ngModel required name="nom" type="text" class="form-control" id="nom"  placeholder="nom">
+  </div>
+  <div class="form-group">
+    <label for="prenom">Prenom</label>
+    <input ngModel required name="prenom" type="text" class="form-control" id="prenom"  placeholder="prenom">
+  </div>
+  <div class="form-group">
+    <label for="pet-select">Sexe:  </label>  <select name="sexe" id="pet-select">
+      <option value="dog">Masuclin</option>
+      <option value="cat">Féminin</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="ServiceId">Service</label>
+    <input ngModel required name="ServiceId" type=number class="form-control" id="ServiceId"  placeholder="ServiceId">
+  </div>
+
+  <button type="submit" >Submit</button>
+</form>
